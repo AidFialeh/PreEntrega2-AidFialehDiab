@@ -9,15 +9,20 @@ alert("Aca te dejamos las opciones:\n 1) Combo económico: TV 32 pulgadas + Base
 
 function saludoFinal(){
     let nombre = prompt("Indicanos tu nombre para registrar el pedido.")
+    console.log(nombre)
     let apellido = prompt("Indicanos tu apellido para registrar el pedido")
+    console.log(apellido)
     let email = prompt("Ingresa tu Correo Electronico")
+    console.log(email)
     const dni = prompt("Indicanos tu DNI para registrar el pedido.")
+    console.log(dni)
     let direccion = prompt("Indicanos tu dirección para guardarte en nuestra base de datos")
-
+    console.log(direccion)
     alert("El pedido esta hecho a Nombre de \n" + nombre + " " + apellido +  " \n" + 
     "Correo Electronico " + email + "\n" +"DNI N°" + dni + "\n" +"Dirección " + direccion)
     alert("En unos minutos recibiras un mensaje de confirmacion en tu Correo Electronico " + email)
 }
+
 
 let combo = prompt("Indicanos cual combo te gusto (con numeros):")
 let totalAPagar = Number
@@ -90,6 +95,18 @@ if (efectivo == metodoPago) {
     }
 }
 
+saludoFinal()
+
+//Bucle
+
+while(totalAPagar >= 200000){
+    alert("Tu Envio es Gratis")
+    break;
+}while(totalAPagar <= 150000 ){
+    alert("Debes ir a Buscar tu compra")
+    break;
+
+}
 
 //Objetos
 
@@ -140,18 +157,9 @@ console.log(nombres)
 const precio = elementosTV.map ((el) => el.precio )
 console.log(precio)
 
-//Bucle
 
-while(totalAPagar >= 200000){
-    alert("Tu Envio es Gratis")
-    break;
-}while(totalAPagar <= 150000 ){
-    alert("Debes ir a Buscar tu compra")
-    break;
 
-}
 
-saludoFinal()
 
 
 
